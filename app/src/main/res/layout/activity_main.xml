@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    tools:context=".MainActivity"
+    android:background="#9bacb4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textColor="#0c1a64"
+        android:id="@+id/tvSignIn"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/log_username"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/tvSignIn"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_username"
+        android:id="@+id/log_password"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_password"
+        android:id="@+id/tvForgotPassword"
+        android:text="Forgot Password?"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="#EB0000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't Have An Account?\nRegister Here:"
+        android:id="@+id/tvRegister"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/tvForgotPassword"
+        android:text="Login"
+        android:backgroundTint="#0c1a64"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:layout_below="@id/tvRegister"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Register"
+        android:backgroundTint="#0c1a64"
+        android:ems="10"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

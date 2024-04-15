@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8DCDE"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH TRACKING NUMBER"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#0c1a64"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:id="@+id/tvSearch"/>
+
+        <EditText
+            android:id="@+id/trackingNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/tvSearch"
+            android:hint="Enter tracking number"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+
+        <Button
+            android:id="@+id/trackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trackingNumberInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#0c1a64"
+            android:text="Track" />
+
+        <TextView
+            android:id="@+id/tfStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Tracking Status:"
+            android:layout_below="@id/trackButton"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/trackingStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tfStatus"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
